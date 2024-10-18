@@ -11,30 +11,84 @@
 <!--
 
 Ejercicios <3
-
-1) Agregar un heading nivel 2, y 2 parrafos.
-2) Crear una ordered list con 3 items.
-3) Crear una unordered list con 3 items.
-4) Crear 2 <div>, dentro de cada div: agregar una imagen, un h2 para mostrar un titulo para esa imagen y un <p> con breve descripcion.
-5) Crear 3 enlaces/links apuntando a sitios diferentes.
-6) Crear menú de navegación <nav> usando una unordered list <ul> que contenga 3 items con links cada uno.
-7) Crear un form con un input tipo texto, que tenga placeholder Buscar y un botón que diga Buscar. 
-8) Agregar al form, un input tipo texto para Nombre.
-9) Agregar al form, un textarea para Descripción.
-10) Crear footer que contenga el siguiente párrafo: &copy; 2024 Fullstack.
-11) Plus: agregar placeholders en los inputs y textarea
-12) Plus: agregar labels y ids para input y textarea.
-13) Plus: agregar 3 items más, dentro de un item de la <nav>, usando <ul> y <li>
-14) Plus: agregar 2 inputs más con labels y ids que elijan.
-
 Más práctica y ejercicios online en: https://www.w3schools.com/html/html_exercises.asp
-    
 Documentación: 
   https://www.w3schools.com/html/html_intro.asp
   https://developer.mozilla.org/es/docs/Learn/HTML/Introduction_to_HTML
 
 -->
-
+    <header>
+      <!-- 6) Crear menú de navegación <nav> usando una unordered list <ul> que contenga 3 items con links cada uno. -->
+        <!-- 13) Plus: agregar 3 items más, dentro de un item de la <nav>, usando <ul> y <li></li> -->
+      <nav>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="https://neoattack.com/neowiki/front-end/">FrontEnd</a></li>
+          <li><a href="https://neoattack.com/neowiki/back-end/">BackEnd</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Sobre Nosotros</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li><a href="https://www.w3schools.com/html/html_exercises.asp">Práctica</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- 1) Agregar un heading nivel 2, y 2 parrafos. -->
     <h1>Formación FullStack</h1>
+    <h2>GSC y UTN</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat qui quam odit laboriosam libero. Eum, omnis, non quod maiores quia recusandae qui eius, quibusdam tempora placeat in perferendis praesentium sed.
+    Quidem quas dolorem quia ipsa exercitationem velit voluptatem dolor possimus? Quisquam, odio sint? Vel, non placeat eius ut enim nobis excepturi consequatur saepe libero tenetur iusto id aliquid perspiciatis unde?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus consequatur optio quisquam provident, ipsum sunt natus dolor, voluptatum ducimus reprehenderit facere, accusamus quasi cum illum quae temporibus atque voluptatibus. Cumque?</p>
+    <!-- 2) Crear una ordered list con 3 items. -->
+    <ol>
+      <li>Front-end</li>
+      <li>Back-end</li>
+      <li>Full-Stack</li>
+    </ol>
+    <!-- 3) Crear una unordered list con 3 items. -->
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JAVASCRIPT</li>
+    </ul>
+    <!-- 4) Crear 2 <div>, dentro de cada div: agregar una imagen, un h2 para mostrar un titulo para esa imagen y un <p> con breve descripcion. -->
+    <div>
+      <h2>Front-End</h2>
+      <img src="https://th.bing.com/th/id/R.a1858186aa3ad02e8e14d8203002d661?rik=vxWm7rFlvtfznA&pid=ImgRaw&r=0" alt="dibujo de hombre y logos de html css y javascript">
+      <p>El frontend sirve para realizar la interfaz de un sitio web, desde su estructura hasta los estilos, como pueden ser la definición de los colores, texturas, tipografías, secciones, entre otros. Su uso es determinante para que el usuario tenga una buena experiencia dentro del sitio o aplicación.</p>
+    </div>
+    <div>
+      <h2>Back-end</h2>
+      <img src="https://plopdo.com/wp-content/uploads/2021/10/backend-is-1024x689.png" alt=" logo backend">
+      <p>El backend son todos los códigos ocultos que sirven para que una página web o aplicación funcione correctamente. Además, de su estructura y organización depende la experiencia de usuario. De igual forma, el backend se encarga de optimizar otros elementos y recursos como la seguridad y privacidad en un sitio web o aplicación. </p>
+    </div>
+
+    <!-- 5) Crear 3 enlaces/links apuntando a sitios diferentes. -->
+    <a href="https://neoattack.com/neowiki/front-end/">Más de Front-End</a>
+    <a href="https://neoattack.com/neowiki/back-end/">Más de Back-End</a>
+    <a href="https://profile.es/blog/desarrollador-full-stack/">Más de Full-Stack</a>
+
+    <!-- 7) Crear un form con un input tipo texto, que tenga placeholder Buscar y un botón que diga Buscar.  -->
+    <!-- 8) Agregar al form, un input tipo texto para Nombre. -->
+    <!-- 11) Plus: agregar placeholders en los inputs y textarea -->
+    <!-- 14) Plus: agregar 2 inputs más con labels y ids que elijan. -->
+     <form>
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" placeholder="Nombre">
+      <label for="surname">Apellido/s</label>
+      <input type="text" id="surname" placeholder="Apellido/s">
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="ejemplo@ejemplo.com">
+      <input type="text" name="search" id="search" placeholder="Buscar">
+      <button type="submit">Buscar</button>
+      <!-- 9) Agregar al form, un textarea para Descripción. -->
+      <label for="description">Descripción</label>
+      <textarea title="description" id="descripcion" placeholder="Escribe tu mensaje."></textarea>
+       
+     </form>
+     <footer>
+      <!-- 10) Crear footer que contenga el siguiente párrafo: &copy; 2024 Fullstack. -->
+       <p>&copy; 2024 Fullstack.</p>
+     </footer>
   </body>
 </html>
