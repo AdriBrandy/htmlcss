@@ -89,7 +89,7 @@ Crear etiqueta header con un texto.
 Aplicar color de fondo y color de texto.
 Agregar padding de 50px.
 Alinear textos al centro.*/
-header {
+header, .headp {
     color: rgb(255, 255, 255);
     background-color: rgb(52, 52, 52);
     padding: 50px;
